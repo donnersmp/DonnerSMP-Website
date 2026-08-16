@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DonnerSMP</title>
+    <meta name="description" content="Join DonnerSMP now!">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Top Navigation Bar -->
+    <header>
+        <div class="logo-container" onclick="navigateTo('home', '/', document.getElementById('home-btn'))" title="DonnerSMP Home">
+            <img src="logo.png" alt="DonnerSMP Logo">
+        </div>
+        <nav>
+            <button id="home-btn" class="nav-btn active" onclick="navigateTo('home', '/', this)">Home</button>
+            <button id="shop-btn" class="nav-btn" onclick="navigateTo('shop', '/shop', this)">Shop</button>
+            <button id="status-btn" class="nav-btn" onclick="navigateTo('status', '/status', this)">Status</button>
+        </nav>
+    </header>
+
+    <!-- Content Sections -->
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="page-section active">
+            <h1>Welcome to DonnerSMP</h1>
+            <p>Join DonnerSMP now! Experience an amazing community, custom plugins, and endless survival adventures. Connect today and leave your mark on the world.</p>
+            
+            <!-- Server IP and Port added under description -->
+            <div class="server-box">
+                <p>Server IP: <strong>donnersmp.net</strong></p>
+                <p>Port: <strong>25565</strong></p>
+            </div>
+        </section>
+
+        <!-- Shop Section -->
+        <section id="shop" class="page-section">
+            <h1>DonnerSMP Shop</h1>
+            <p>Shop coming soon!</p>
+        </section>
+
+        <!-- Status Section -->
+        <section id="status" class="page-section">
+            <h1>Server Status</h1>
+            <p>Server IP: <strong style="color: #ffffff;">donnersmp.net</strong></p>
+            <p style="margin-top: 10px; color: #2ed573;">● Offline until server is made</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DonnerSMP. All rights reserved.</p>
+    </footer>
+
+    <!-- Client-side Routing Script -->
+    <script src="script.js"></script>
+</body>
+</html>
